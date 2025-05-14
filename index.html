@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +9,216 @@
 </head>
 
 <body>
+
     <nav class="header">
-        <div class="div-header"> 
-            <img src="./assets/icons8-meat-100.png" alt="imagem de um pedaço de carne" class="carne-img">
-            <h1 class="titulo-header">Delicias da carne</h1>
+        <div class="div-header">
+            <img src="./assets/logotipodosite.png" alt="imagem de um pedaço de carne" class="carne-img">
         </div>
 
         <ul class="nav-itens">
-            <li>cardápio</li>
-            <li>contato</li>
-            <li>localização</li>
+            <a href="#sobre-nos" class="tagA-decoracao"><li>Sobre</li></a>
+            <a href="#cardapio" class="tagA-decoracao"><li>cardápio</li></a>
+            <a href="#contato" class="tagA-decoracao"><li>contato</li></a>
+            <a href="#localização" class="tagA-decoracao"><li>localização</li></a>
         </ul>
     </nav>
+
+
+    <main>
+        <section class="hero">
+            <div class="imagem-section1">
+                <div class="home-conteudo">
+                    <h1 class="texto-principal">Descubra sabores extraordinários com nossas <span>carnes exóticas</span>.
+                        Uma jornada gastronômica única aguarda você.</h1>
+                </div>
+            </div>
+        </section>
+
+        <div class="espacamento">
+            <h2 class="sobrenos-pre-titulo">venha conhecer mais sobre a delicias da carne!</h2>
+            <div class="linha"></div>
+        </div>
+
+        <section id="sobre-nos">
+            <div class="sobrenos-texto">
+                <h2 class="sobrenos-titulo">sobre nós</h2>
+                <p class="sobrenos-paragrafos">
+                    Bem-vindo à nossa jornada gastronômica, onde as Delícias da Carne Exóticas e os prestigiados Cortes
+                    Uruguaios e Argentinos são uma tradição de quarenta anos.
+                    Não somos apenas apreciadores de comida; somos exploradores de sabores. Viajamos, conversamos,
+                    cozinhamos, e acreditamos que a comida é uma das grandes maravilhas da vida.
+                </p>
+
+                <p class="sobrenos-paragrafos">
+                    Há quatro décadas, oferecemos produtos de qualidade, desde os Cortes Uruguaios e Argentinos até o
+                    frescor do Filé de Peixes, a riqueza do Haddock Escocês e a tentação dos tentáculos de Vieiras
+                    Importadas.
+                    Nossa casa é o melhor restaurante, e convidamos você a se juntar a nós nessa experiência única. Delícias
+                    da Carne é mais que um local para saborear;
+                </p>
+
+                <p class="sobrenos-paragrafos">
+                    É um convite para se perder em um mundo de aromas, texturas
+                    e memórias culinárias.
+                    Bem-vindo à nossa mesa, onde tradição e inovação se encontram para criar uma experiência verdadeiramente
+                    excepcional.
+                </p>
+                    
+                
+            </div>
+
+            <div class="sobrenos-div-imagem">
+                <img src="assets/homens-fazendo-churrasco.jpg" alt="homens fazendo churrasco" id="sobrenos-imagem">
+            </div>
+
+        </section>
+
+        <div class="espacamento-2"></div>
+        <section id="cardapio">
+            <div class="cards-cardapio">
+                <div class="card-teste">
+                    <img src="assets/card-picanha.webp" alt="imagem de uma picanha crua no prato" class="card-foto">
+                    <h3 class="card-nome">carne de picanha</h3>
+                    <p class="card-preco">R$ 30, 00</p>
+                    <button class="card-botao">Comprar</button>
+                </div>
+                <div class="card-teste">
+                    <img src="assets/card-coelho.webp" alt="imagem de carne de coelho" class="card-foto">
+                    <h3 class="card-nome">carne de coelho</h3>
+                    <p class="card-preco">R$ 30, 00</p>
+                    <button class="card-botao">Comprar</button>
+                </div>
+                <div class="card-teste">
+                    <img src="assets/card-avestruz.webp" alt="imagem de dois pedaços de carne de avestruz" class="card-foto">
+                    <h3 class="card-nome">carne de avestruz</h3>
+                    <p class="card-preco">R$ 30, 00</p>
+                    <button class="card-botao">Comprar</button>
+                </div>
+            </div>
+
+            <div class="cards-cardapio">
+                <div class="card-teste">
+                    <img src="assets/card-pato.webp" alt="imagem de carne de pato" class="card-foto">
+                    <h3 class="card-nome">carne de pato</h3>
+                    <p class="card-preco">R$ 30, 00</p>
+                    <button class="card-botao">Comprar</button>
+                </div>
+                <div class="card-teste">
+                    <img src="assets/card-javali.webp" alt="imagem de carne de javali dentro de um saco" class="card-foto">
+                    <h3 class="card-nome">carne de javali</h3>
+                    <p class="card-preco">R$ 30, 00</p>
+                    <button class="card-botao">Comprar</button>
+                </div>
+                <div class="card-teste">
+                    <img src="assets/card-coxa-pato.webp" alt="imagem de duas partes de coxa de pato" class="card-foto">
+                    <h3 class="card-nome">coxa de pato</h3>
+                    <p class="card-preco">R$ 30, 00</p>
+                    <button class="card-botao">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="espacamento-2"></div>
+
+        <section id="contato">
+            <h4 class="contato-titulo">Contate-nos</h4>
+            <div class="div-form">
+                <form id="meuFormulario">
+                    <div id="div-erro" style="color: rgb(217, 200, 200); font-weight: bold;
+                   margin: 4px; padding: 4px"></div>
+
+                    <input type="text" class="formulario" id="input-nome" placeholder="nome">
+
+                    <input type="email" class="formulario" id="input-email" placeholder="e-mail">
+
+                    <input type="tel" class="formulario" id="input-number" placeholder="telefone">
+
+                    <input type="text"class="formulario" id="input-mensagem" placeholder="mensagem">
+
+                    
+                    <div class="escolha-div-input">
+                        <div class="titulo">Preferência:</div>
+                
+                        <input type="radio" id="carne-exotica" name="carne" value="carne-exotica">
+                        <label class="opcao" for="carne-bovina">Carnes Exóticas</label>
+                
+                        <input type="radio" id="carne-suina" name="carne" value="suina">
+                        <label class="opcao" for="carne-suina">Carnes Tradicionais </label>
+                
+                        <input type="radio" id="ambas" name="carne" value="frango">
+                        <label class="opcao" for="ambas">Ambas </label>
+                    </div>
+                
+                    <label for="carne-favorita"></label>
+                    <select class="input-selecionar" id="carne-favorita">
+                    <option class="selecionado" value="Selecione" disabled selected>Selecione seu tipo de carne favorito:</option>
+                    <option class="selecionado" value="Bovina">Bovina</option>
+                    <option class="selecionado" value="Suína">Suína</option>
+                    <option class="selecionado" value="Aves">Aves</option>
+                    <option class="selecionado" value="Frutos do mar">Frutos do mar</option>
+                    <option class="selecionado" value="Outras">Outras</option>
+                    </select>
+
+                    <div class="escolha-div-input">
+                        <div class="titulo">Receber comunicação por:</div>
+                
+                        <input type="radio" id="email" name="comunicacao" value="email">
+                        <label class="opcao" for="comunicacao">E-mail</label>
+                
+                        <input type="radio" id="sms" name="comunicacao" value="sms">
+                        <label class="opcao" for="comunicacao">SMS </label>
+                
+                        <input type="radio" id="todos" name="comunicacao" value="todos">
+                        <label class="opcao" for="comunicacao">Todos os meios </label>
+                    </div>
+                    
+        
+                    <button class="botao-formulario">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="localização">
+            <div class="container-localizacao">
+                <h3 class="localizacao-titulo">Venha nos conhecer !</h3>
+
+                <p class="localizacao-info"> Segunda às Sextas: 8hrs às 18hrs </p>
+
+                <p class="localizacao-info">Endereço: Rua Voluntários da Pátria, 340 loja F - Botafogo - Rio de Janeiro - RJ </p>
+                
+                <p class="localizacao-info">Whatsapp: (21) 9 7213-3041</p> 
+            </div>
+
+            
+        <div class="mapa-container">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.8797193832165!2d-43.19646642541421!3d-22.954656439582138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997fe09f122171%3A0xcb6578915f0cf2be!2sR.%20Volunt%C3%A1rios%20da%20P%C3%A1tria%2C%20340%20-%20f%20-%20Botafogo%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022270-016!5e0!3m2!1spt-BR!2sbr!4v1702941950984!5m2!1spt-BR!2sbr"
+            width="1240" 
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-section">
+            <div class="footer-div">
+                <img src="assets/logotipodosite.png" alt="logo do site" class="carne-img logo-footer">
+                <ul class="nav-itens">
+                    <a href="#sobre-nos" class="tagA-decoracao"><li class="item-footer">Sobre</li></a>
+                    <a href="#cardapio" class="tagA-decoracao"><li class="item-footer">cardápio</li></a>
+                    <a href="#contato" class="tagA-decoracao"><li class="item-footer">contato</li></a>
+                    <a href="#localização" class="tagA-decoracao"><li class="item-footer">localização</li></a>
+                </ol>
+            </div>
+        </section>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
+
 </html>

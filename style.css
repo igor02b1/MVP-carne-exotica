@@ -5,13 +5,15 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto';
+    scroll-behavior: smooth;
 }
 
-body {
-    background-image: url(./assets/background.webp);
+body{
+    background-image: url('assets/backgroundFogueira.jpg');
     background-size: cover;
-    background-repeat: no-repeat;  
+    background-attachment: fixed; /* Ajuste conforme necessário */
 }
+
 
 .titulo-header{
     color: white;
@@ -25,17 +27,18 @@ body {
 }
 
 .carne-img{
-    width: 60px;
-    height: 60px;
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
 }
 
 .header {
-    height: 70px;
+    height: 110px;
     padding: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 10px;
+    background-color: rgb(232, 225, 225);
 }
 
 .nav-itens {
@@ -43,7 +46,340 @@ body {
     display: flex;
     align-items: baseline;
     gap: 15px;
-    color: white;
+    color:#8B0000;
     font-size: 20px;
+    margin-right: 30px;
 }
 
+nav li {
+    cursor: pointer;
+}
+
+nav li:hover{
+    color: rgb(181, 170, 170);
+}
+
+.tagA-decoracao{
+    color: inherit;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+.home-conteudo {
+        text-align: center; /* Centraliza o texto horizontalmente */
+        color: #ffffff; /* Cor do texto */
+        width: 600px;
+}
+
+span {
+    color: #8B0000;
+}
+
+.imagem-section1 {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./assets/contrafile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(75%)
+}
+
+.espacamento {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(232, 225, 225);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* sobre nós*/
+
+#sobre-nos{
+    display: flex;
+}
+
+.sobrenos-texto{
+    width: 50%;
+    height: 100vh;
+    padding: 25px;
+    font-family: 'Roboto';
+    background-color: rgb(232, 225, 225);
+    padding-top: 100px;
+}
+
+.sobrenos-pre-titulo{
+    color: #8B0000;
+    font-family: 'Roboto';
+    font-size: 26px;
+    padding-top: 80px;
+    margin-left: 100px;
+}
+
+.linha{
+    height: 2px;
+    width: 200px;
+    padding: 4px;
+    background-color:  #8B0000;
+    position: relative;
+    left: -390px;
+    top: 75px;
+}
+
+.sobrenos-titulo {
+    color: #8B0000;
+    margin-bottom: 30px;
+    text-align: center;;
+}
+
+.sobrenos-div-imagem {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(232, 225, 225);
+}
+
+#sobrenos-imagem{
+    width: 500px;
+    height: 480px;
+    border-radius: 3px;
+}
+
+.sobrenos-paragrafos{
+    color: rgb(97, 92, 92);
+    font-family: 'Roboto';
+    padding: 15px;
+    font-size: 16px;
+}
+
+.espacamento-2{
+    width: 100%;
+    height: 150px;  
+}
+
+/* cardapio */ 
+
+#cardapio{
+    z-index: -1;
+}
+.cards-cardapio{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: stretch;
+}
+
+.card-teste {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+    background-color: rgb(37, 33, 33);
+    opacity: 95%;
+    border: solid #8B0000 1px;
+    margin: 20px;
+}
+
+.card-foto{
+    margin-top: 30px;
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.card-nome{
+    margin-top: 45px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: rgb(232, 225, 225)
+}
+
+.card-preco{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(232, 225, 225);
+    margin-bottom: 16px;
+}
+
+.card-botao{
+    background-color: rgb(232, 225, 225);
+    color:#8B0000;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.card-botao:hover{
+    background-color: #8B0000;
+    color: rgb(232, 225, 225);
+}
+
+#contato{
+    height: 50rem;
+    background-color: rgb(232, 225, 225);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato-titulo{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    padding: 40px;
+    font-size: 26px;
+    color:#8B0000;
+}
+
+.div-form{
+    height: 660px;
+    width: 500px;
+    background-color: rgb(37, 33, 33);
+    border: 2px solid #8B0000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-selecionar{
+    align-self: center;
+    width: 300px;
+    padding:10px;
+    margin: 10px;
+    background-color: rgb(37, 33, 33);
+    color: rgb(181, 170, 170);
+}
+
+.formulario {
+    margin: 20px;
+    padding: 10px;
+    background-color: rgb(30, 27, 27);
+    color: #ffffff;
+    border-radius: 3px;
+    border: none;
+}
+
+.formulario:focus {
+    outline-color: #ff0000;
+}
+
+.botao-formulario {
+    padding: 10px;
+    width: 200px;
+    align-self: center;
+    background-color: rgb(232, 225, 225);
+    color:#8B0000;
+    border-radius: 10px;
+}
+
+.botao-formulario:hover{
+    background-color: #8B0000;
+    color: rgb(232, 225, 225);
+}
+
+.radio-input{
+    background-color: #8B0000;
+}
+
+.input-titulo{
+    color: rgb(232, 225, 225);
+    text-align: center;
+    display: block;
+}
+
+.div-container-inputs{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.escolha-div-input {
+    margin: 15px;
+    padding: 10px;
+    background-color: rgb(37, 33, 33);
+    border-radius: 5px;
+}
+
+.titulo {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(232, 225, 225);
+}
+
+.opcao {
+    margin-bottom: 10px;
+    padding: 5px;
+    color:rgb(181, 170, 170);
+
+}
+
+/*localização*/
+
+#localização{
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-localizacao {
+    width: 100vw;
+    height: 300px;
+}
+
+.localizacao-titulo{
+    text-align: center;
+    color:rgb(232, 225, 225);
+    font-size: 26px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.localizacao-info{
+    text-align: center;
+    color:rgb(232, 225, 225);
+    font-size: 16px;
+    padding: 15px;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* footer */
+
+
+
+.footer-div{
+    margin-top: 100px;
+    height: 14rem;
+    background-color: rgb(232, 225, 225);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-footer{
+    margin-bottom: 20px;
+    padding: 12px;
+}
+
+.erro {
+    color: red;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.item-footer:hover{
+    color: rgb(181, 170, 170);
+}
